@@ -13,7 +13,7 @@ import cv2
 # image = cv2.imread(filename=r'E:\OpenCV\OpenCV\images\DSC_2962.JPG')
 #image = cv2.imread(filename=r'D:\iNeuron\OpenCV\images\DSC_2962.JPG',flags=cv2.IMREAD_COLOR)
 #image = cv2.imread(filename=r'D:\iNeuron\OpenCV\images\DSC_2962.JPG',flags=cv2.IMREAD_GRAYSCALE)
-image = cv2.imread(filename=r'D:\iNeuron\OpenCV\images\DSC_2962.JPG',flags=cv2.IMREAD_UNCHANGED)
+image = cv2.imread(filename=r'D:\iNeuron\OpenCV\images\DSC_2962.JPG',flags=cv2.IMREAD_GRAYSCALE)
 #image=cv2.resize(image,dsize=(300,300))
 image=cv2.resize(image,dsize=(0,0),fx=0.25,fy=0.25)
 print(image.shape)
@@ -24,4 +24,4 @@ cv2.imshow('deepak marriage', image)
 cv2.waitKey(10000)
 cv2.destroyAllWindows()
 
-
+print(image)
